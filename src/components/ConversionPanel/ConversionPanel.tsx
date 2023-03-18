@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import JsonToTypescript from "components/JsonToTypescript/JsonToTypescript";
+import JsonToTypescript from "../JsonToTypescript/JsonToTypescript";
 
 interface ConversionPanelProps {}
 
