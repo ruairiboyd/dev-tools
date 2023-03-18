@@ -2,7 +2,7 @@
   "name": "dev-tools",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://{ruairiboyd}.github.io/{dev-tools}",
+  "homepage": "https://ruairiboyd.github.io/dev-tools",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
