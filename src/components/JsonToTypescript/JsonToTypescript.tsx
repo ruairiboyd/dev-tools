@@ -18,6 +18,7 @@ export default function JsonToTypescript(
     let type: string = typeof value;
     if (Array.isArray(value)) {
       type = `${typeof value[0]}[]`;
+      console.log("type", type);
     }
     interfaceCode += `${indentChar.repeat(
       indentSize

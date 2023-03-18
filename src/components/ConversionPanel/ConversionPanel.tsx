@@ -13,7 +13,7 @@ const ConversionPanel: React.FC<ConversionPanelProps> = () => {
     try {
       json = JSON.parse(jsonInput);
     } catch (error) {
-      alert("Invalid JSON input - Please Correct");
+      alert("Invalid JSON input - Please correct formatting");
       return;
     }
     const interfaceCode = JsonToTypescript(json, interfaceName);
