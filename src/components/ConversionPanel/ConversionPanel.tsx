@@ -7,6 +7,7 @@ const ConversionPanel: React.FC<ConversionPanelProps> = () => {
   const [jsonInput, setJsonInput] = useState<string>("{}");
   const [interfaceName, setInterfaceName] = useState<string>("");
   const [interfaceOutput, setInterfaceOutput] = useState<string>("");
+  const [disabled, setDisabled] = useState<boolean>(true);
 
   const generateInterface = () => {
     let json;
@@ -28,13 +29,21 @@ const ConversionPanel: React.FC<ConversionPanelProps> = () => {
         2
       );
       setJsonInput(formattedJson);
+      setDisabled(false);
     } catch (error) {
       setJsonInput(event.target.value);
     }
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100vh",
+        paddingRight: "50px",
+      }}
+    >
       <div style={{ padding: "16px" }}>
         <h1 style={{ fontSize: "32px", marginBottom: "8px" }}>
           JSON to TypeScript Interface Conversion
@@ -64,6 +73,7 @@ const ConversionPanel: React.FC<ConversionPanelProps> = () => {
         <button
           onClick={generateInterface}
           style={{ marginBottom: "8px", fontSize: "16px" }}
+          disabled={disabled}
         >
           Generate Interface
         </button>

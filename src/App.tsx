@@ -5,7 +5,6 @@ import ConversionPanel from "./components/ConversionPanel/ConversionPanel";
 function App() {
   return (
     <>
-      <h1>Conversion</h1>
       <ConversionPanel />
     </>
   );
