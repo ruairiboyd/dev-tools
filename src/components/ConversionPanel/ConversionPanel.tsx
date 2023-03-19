@@ -92,6 +92,9 @@ const ConversionPanel: React.FC<ConversionPanelProps> = () => {
         >
           {interfaceOutput}
         </pre>
+        <button onClick={() => navigator.clipboard.writeText(interfaceOutput)}>
+          Copy
+        </button>
       </div>
     </div>
   );
