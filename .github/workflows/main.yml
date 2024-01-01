@@ -1,0 +1,11 @@
+name: Testing
+
+on:
+  workflow_call:
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Repository Name
+        run: echo "Repository Name: $GITHUB_REPOSITORY"
