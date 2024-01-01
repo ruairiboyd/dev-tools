@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Repository Name
-        run: echo "Repository Name: $GITHUB_REPOSITORY"
+        run: echo "Repository Name: dev-tools"
